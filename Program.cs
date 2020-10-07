@@ -35,6 +35,13 @@ namespace UserRegistration
                 Console.WriteLine("Enter a 10 digit mobile number preceeded with country code: ");
                 mobileNo = Console.ReadLine();
             }
+            Console.WriteLine("Enter a password: ");
+            String password1 = Console.ReadLine();
+            while(!val.PasswordValidation(password1))
+            {
+                Console.WriteLine("Enter a password with minimum 8 characters ");
+                password1 = Console.ReadLine();
+            }
             
         }
     }
