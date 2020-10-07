@@ -42,7 +42,11 @@ namespace UserRegistration
                 Console.WriteLine("Enter a password with minimum 8 characters ");
                 password1 = Console.ReadLine();
             }
-            
+            Console.WriteLine("Registration Successful.");
+            Console.WriteLine("Name of the User :" + firstName + " " + lastName);
+            Console.WriteLine("Email ID of User : " + email);
+            Console.WriteLine("Mobile Number of User: " + mobileNo);
+
         }
     }
 }
